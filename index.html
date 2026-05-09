@@ -34,13 +34,25 @@
             flex-direction: column;
             gap: 0.75rem;
         }
-        /* YouTube Logo Animation */
         .yt-link {
             transition: all 0.3s ease;
         }
         .yt-link:hover {
             transform: scale(1.1);
             filter: drop-shadow(0 0 8px #ff0000);
+        }
+        .promo-banner {
+            background: linear-gradient(90deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 41, 59, 0.5) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+        .url-link {
+            color: #3b82f6;
+            text-decoration: underline;
+            word-break: break-all;
+            transition: color 0.2s;
+        }
+        .url-link:hover {
+            color: #60a5fa;
         }
     </style>
 </head>
@@ -88,6 +100,14 @@
             <p class="text-slate-400 text-base md:text-xl mb-4 max-w-2xl mx-auto italic">
                 Düzensiz fiillerin hallerini <span class="text-white font-bold not-italic">alt alta listelenmiş haliyle</span> daha kolay ezberle.
             </p>
+
+            <!-- CÜMLE SİTEMİZ - Hızlı Erişim Paneli -->
+            <div class="mt-8 mb-4 max-w-xl mx-auto promo-banner rounded-2xl p-6 flex flex-col items-center gap-2 shadow-lg backdrop-blur-sm">
+                <h3 class="text-white font-black text-xl tracking-tighter">CÜMLE SİTEMİZ</h3>
+                <a href="https://darkpixeltr9-ai.github.io/-90-DarkMasterEnglish-CumleSitesi/" target="_blank" class="url-link text-sm font-medium italic">
+                    https://darkpixeltr9-ai.github.io/-90-DarkMasterEnglish-CumleSitesi/
+                </a>
+            </div>
             
             <p class="text-slate-500 text-sm mb-12">
                 Aşağıdaki listede en sık kullanılan tüm düzensiz fiiller yer almaktadır.
@@ -125,7 +145,6 @@
                 </a>
                 <span class="text-blue-400 font-bold uppercase tracking-tight">(+90)DarkPixel</span>
             </div>
-            <!-- Patent yılı 2026 olarak güncellendi -->
             <p>© 2026 (+90)DarkMaster - Tüm Hakları Saklıdır.</p>
         </div>
     </footer>
